@@ -56,6 +56,8 @@ $cash= $result[0]['cash'];
         CS50::query("UPDATE users set cash = cash - ? WHERE id = ? ",$cost,$_SESSION["id"]);
          CS50::query("INSERT INTO portfolio (userid, symbol, shares) VALUES (?,?,?) ON DUPLICATE KEY UPDATE shares = shares + ?",$_SESSION["id"], $stock, $_POST["shares"] ,  $_POST["shares"]);
         
+        CS50:: query("INSERT INTO history (tran,userid, symbol, shares, price) VALUES(?, ?, ?, ?, ?)",'BUY',$_SESSION["id"], strtoupper($_POST['symbol']), $_POST["shares"],$price);  
+
         
         //redirect to index to show the table of shares
        redirect("/");  

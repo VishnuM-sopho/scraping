@@ -12,7 +12,7 @@ $shares= $result[0]['shares'];
 		CS50::query("DELETE FROM portfolio WHERE userid = ? AND symbol = ?",$_SESSION["id"], $_POST["symbol"]);
             
  
- //$stack=CS50:: query("INSERT INTO history (id, symbol, shares, transaction) VALUES(?, ?, ?, ?)",$_SESSION["id"], strtoupper($_POST['symbols']), $totals["share"], "SELL");  
+ CS50:: query("INSERT INTO history (tran,userid, symbol, shares, price) VALUES(?, ?, ?, ?, ?)",'SELL',$_SESSION["id"], strtoupper($_POST['symbol']), $shares,$symbol);  
 
  //dump($result,$symbol,$shares,$costs);
     
