@@ -8,8 +8,7 @@
 $positions = [];
 foreach ($rows as $row)
 {
-    $stock = lookup($row["symbol"]);
-    if ($stock !== false)
+    
     {
         $positions[] = [
            "tran" => $row["tran"],

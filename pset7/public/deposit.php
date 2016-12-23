@@ -13,7 +13,8 @@
         
         // update user's cash
         CS50::query("UPDATE users SET cash = cash + ? WHERE id = ?", $_POST["deposit"], $_SESSION["id"]);
-        
+        CS50:: query("INSERT INTO history (tran,userid, price) VALUES(?, ?, ?)",'DEPOSIT',$_SESSION["id"],$_POST["deposit"]);  
+
         // redirect to portfolio 
         redirect("/");
     }

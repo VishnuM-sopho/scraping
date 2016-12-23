@@ -26,7 +26,7 @@
             <td>{$position["time"]}</td>
             <td>{$position["symbol"]}</td>
             <td>{$position["shares"]}</td>
-            <td>{$position["price"]}</td>
+            <td>\${$position["price"]}</td>
            
             </tr>");
         }

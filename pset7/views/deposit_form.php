@@ -1,10 +1,10 @@
 <form action="deposit.php" method="post">
     <fieldset>
-        <div class="control-group">
-            <input class="input-medium" name="deposit" placeholder="Deposit Amount" type="text"/>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control"  name="deposit" placeholder="Deposit Amount" type="text"/>
         </div>
-        <div class="control-group">
-            <button type="submit" class="btn">Deposit</button>
+         <div class="form-group">
+            <button class="btn btn-default" type="submit">Deposit</button>
         </div>
     </fieldset>
 </form>
