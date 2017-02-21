@@ -74,8 +74,8 @@ $query=("INSERT INTO data (cname, cadd, year, courses, infra, web) VALUES  (?,?,
 
              mysqli_stmt_close($stmt);
         }else {
-            echo 'Error Occurred<br />';
-            echo mysqli_error($dbc);
+          //  echo 'Error Occurred<br />';
+          //  echo mysqli_error($dbc);
             mysqli_stmt_close($stmt);
            // mysqli_close($dbc);
                 }
