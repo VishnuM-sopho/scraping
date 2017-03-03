@@ -1,0 +1,22 @@
+.container{
+    position :relative;
+    padding:10px;
+    
+}
+
+.loader{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,.8) url('https://vishnum21998-vishnum1998.cs50.io/loader.gif') no-repeat 50%;
+    
+}
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
